@@ -191,7 +191,7 @@ static int device_init(void)
 
 static void device_exit(void)
 {
-    unregister_chrdev(major_number, DEVICE_NAME);
+    unregister_chrdev(200, DEVICE_NAME);
     printk(KERN_ALERT "Calc module is unloaded!\n");
 }
 
